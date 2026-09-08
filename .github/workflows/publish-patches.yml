@@ -43,7 +43,10 @@ jobs:
           fi
 
       - name: List assets already on the release
-        run: gh release view "$TAG" --json assets --jq '.assets[].name' > /tmp/assets.txt || : > /tmp/assets.txt
+        run: |
+          gh release view "$TAG" --json assets --jq '.assets[].name' > /tmp/assets.txt || true
+          touch /tmp/assets.txt
+          echo "Assets currently on the release: $(wc -l < /tmp/assets.txt)"
 
       - name: Regenerate catalogue and stage changed assets
         run: node scripts/generate-patch-index.mjs --assets-file /tmp/assets.txt
