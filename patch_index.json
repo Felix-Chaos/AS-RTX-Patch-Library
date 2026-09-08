@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-09-08T11:23:04.470Z",
+  "entries": [
+    {
+      "slug": "as-1-10-1-p1-0",
+      "folder_name": "Actions & Stuff for RTX 1.10.1 V1.0",
+      "packVersion": "v1.10.1",
+      "patchVersion": "1.0",
+      "marketplace_pack_stats": {
+        "v1": {
+          "files": 11653,
+          "dirs": 159
+        }
+      },
+      "stats": {
+        "files": 11653,
+        "dirs": 159
+      },
+      "validation": {
+        "logo_hash": "d4d088d108cd635116215134ad40e97272f9fbe17ead8a03ba4155b1f58fecd4",
+        "has_lang_file": true
+      },
+      "patches": {
+        "encrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-10-1-p1-0-encrypted.vcdiff",
+          "sha256": "e786681d62d79868cd6808ab598ad20288714bad947967deb59265f43ee640eb",
+          "size": 21378772
+        },
+        "decrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-10-1-p1-0-decrypted.vcdiff",
+          "sha256": "d6ba553fb5e1baa5051b31121ef1abe2416e2fb3c9871f1a188b83ad7b42e852",
+          "size": 3009649
+        }
+      }
+    },
+    {
+      "slug": "as-1-10-1-p1-2",
+      "folder_name": "Actions & Stuff for RTX 1.10.1 V1.2",
+      "packVersion": "v1.10.1",
+      "patchVersion": "1.2",
+      "marketplace_pack_stats": {
+        "v1": {
+          "files": 11653,
+          "dirs": 159
+        }
+      },
+      "stats": {
+        "files": 11653,
+        "dirs": 159
+      },
+      "validation": {
+        "logo_hash": "d4d088d108cd635116215134ad40e97272f9fbe17ead8a03ba4155b1f58fecd4",
+        "has_lang_file": true
+      },
+      "patches": {
+        "encrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-10-1-p1-2-encrypted.vcdiff",
+          "sha256": "e7dcf290bde8d9570ac42566eb2dcddfa99b99714b7c2bc09b2180486140176c",
+          "size": 21374375
+        },
+        "decrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-10-1-p1-2-decrypted.vcdiff",
+          "sha256": "d50294ccb30a0fa7950b1c2e625c3685b7f6a945d322ee99d38dc939dd06f68b",
+          "size": 2999672
+        }
+      }
+    },
+    {
+      "slug": "as-1-10-1-p1-5",
+      "folder_name": "Actions & Stuff for RTX 1.10.1 V1.5",
+      "packVersion": "v1.10.1",
+      "patchVersion": "1.5",
+      "marketplace_pack_stats": {
+        "v1": {
+          "files": 11653,
+          "dirs": 159
+        }
+      },
+      "stats": {
+        "files": 11653,
+        "dirs": 159
+      },
+      "validation": {
+        "logo_hash": "d4d088d108cd635116215134ad40e97272f9fbe17ead8a03ba4155b1f58fecd4",
+        "has_lang_file": true
+      },
+      "patches": {
+        "encrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-10-1-p1-5-encrypted.vcdiff",
+          "sha256": "6010a6c54560d55d57f341ef99794a3a73cb9c49ae7c4494365c1231757f5338",
+          "size": 21374346
+        },
+        "decrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-10-1-p1-5-decrypted.vcdiff",
+          "sha256": "31b2dea2fec2dc3502381e83fee6484b4065a9caace36d0800b6accc0f8e3d2f",
+          "size": 2967246
+        }
+      }
+    },
+    {
+      "slug": "as-1-11-1-p0-1",
+      "folder_name": "Actions & Stuff for RTX 1.11.1 V0.1",
+      "packVersion": "v1.11.1",
+      "patchVersion": "0.1",
+      "marketplace_pack_stats": {
+        "v1": {
+          "files": 12137,
+          "dirs": 166
+        }
+      },
+      "stats": {
+        "files": 12137,
+        "dirs": 166
+      },
+      "validation": {
+        "logo_hash": "fc16349c69905251070292252658fa98e6640a7268bae434a4ccc93059f05f78",
+        "has_lang_file": true
+      },
+      "patches": {
+        "encrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-11-1-p0-1-encrypted.vcdiff",
+          "sha256": "29973846e969348a59c27645e5171421f345a8e85adf4c99e6fe88e0aaade02f",
+          "size": 23913284
+        },
+        "decrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-11-1-p0-1-decrypted.vcdiff",
+          "sha256": "401b37b3de3a1c026bb51628605ea4a31783dfa8b0396d1fcd7daad1e07212cd",
+          "size": 3709614
+        }
+      }
+    },
+    {
+      "slug": "as-1-11-p1-1",
+      "folder_name": "Actions & Stuff for RTX 1.11 V1.1",
+      "packVersion": "v1.11",
+      "patchVersion": "1.1",
+      "marketplace_pack_stats": {
+        "v1": {
+          "files": 12136,
+          "dirs": 165
+        }
+      },
+      "stats": {
+        "files": 12136,
+        "dirs": 165
+      },
+      "validation": {
+        "logo_hash": "fc16349c69905251070292252658fa98e6640a7268bae434a4ccc93059f05f78",
+        "has_lang_file": true
+      },
+      "patches": {
+        "encrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-11-p1-1-encrypted.vcdiff",
+          "sha256": "05a1614a57c9a012dd0418d7037734ee990a9e392a93fa57b90f1704c15a048d",
+          "size": 23912425
+        },
+        "decrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-11-p1-1-decrypted.vcdiff",
+          "sha256": "92853c3ee105a3abf3981a7e4909e08506f985e2c6c27afc323a64d4f8100ca0",
+          "size": 3481024
+        }
+      }
+    },
+    {
+      "slug": "as-1-11-p1-2",
+      "folder_name": "Actions & Stuff for RTX 1.11 V1.2",
+      "packVersion": "v1.11",
+      "patchVersion": "1.2",
+      "marketplace_pack_stats": {
+        "v1": {
+          "files": 12136,
+          "dirs": 165
+        }
+      },
+      "stats": {
+        "files": 12136,
+        "dirs": 165
+      },
+      "validation": {
+        "logo_hash": "fc16349c69905251070292252658fa98e6640a7268bae434a4ccc93059f05f78",
+        "has_lang_file": true
+      },
+      "patches": {
+        "encrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-11-p1-2-encrypted.vcdiff",
+          "sha256": "40be62d811b2070a256d6f69fd12eb12b0c0576a2d975e79cfa180d5305990e9",
+          "size": 17013572
+        },
+        "decrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-11-p1-2-decrypted.vcdiff",
+          "sha256": "944e06363fa1514819ea66f203f6c68fc503230664324cf1eae74996de117b19",
+          "size": 16255745
+        }
+      }
+    },
+    {
+      "slug": "as-1-11-p1-3",
+      "folder_name": "Actions & Stuff for RTX 1.11 V1.3",
+      "packVersion": "v1.11",
+      "patchVersion": "1.3",
+      "marketplace_pack_stats": {
+        "v1": {
+          "files": 12136,
+          "dirs": 165
+        }
+      },
+      "stats": {
+        "files": 12136,
+        "dirs": 165
+      },
+      "validation": {
+        "logo_hash": "fc16349c69905251070292252658fa98e6640a7268bae434a4ccc93059f05f78",
+        "has_lang_file": true
+      },
+      "patches": {
+        "encrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-11-p1-3-encrypted.vcdiff",
+          "sha256": "18ebf2177401772042eb6f0e8b76dae8e1f4aafdb8037004a55ff459a8f5ab62",
+          "size": 24228090
+        },
+        "decrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-11-p1-3-decrypted.vcdiff",
+          "sha256": "ad5353129289649c8b750ff5397c5aa777597ffaea0aadcb80d8aca3ff316d4e",
+          "size": 20830855
+        }
+      }
+    },
+    {
+      "slug": "as-1-11-p1-4",
+      "folder_name": "Actions & Stuff for RTX 1.11 V1.4",
+      "packVersion": "v1.11",
+      "patchVersion": "1.4",
+      "marketplace_pack_stats": {
+        "v1": {
+          "files": 12136,
+          "dirs": 165
+        }
+      },
+      "stats": {
+        "files": 12136,
+        "dirs": 165
+      },
+      "validation": {
+        "logo_hash": "fc16349c69905251070292252658fa98e6640a7268bae434a4ccc93059f05f78",
+        "has_lang_file": true
+      },
+      "patches": {
+        "encrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-11-p1-4-encrypted.vcdiff",
+          "sha256": "9be6657f7bf66d4fa32987783a18c5c245743ef1ecb09616621d4312fe872b73",
+          "size": 16784413
+        },
+        "decrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-11-p1-4-decrypted.vcdiff",
+          "sha256": "87617bb0b77965c0b30c119a985e3df8a5d15ed183731066b10c4ab0750358bf",
+          "size": 15512941
+        }
+      }
+    },
+    {
+      "slug": "as-1-11-p1-5",
+      "folder_name": "Actions & Stuff for RTX 1.11 V1.5",
+      "packVersion": "v1.11",
+      "patchVersion": "1.5",
+      "marketplace_pack_stats": {
+        "v1": {
+          "files": 12136,
+          "dirs": 165
+        }
+      },
+      "stats": {
+        "files": 12136,
+        "dirs": 165
+      },
+      "validation": {
+        "logo_hash": "fc16349c69905251070292252658fa98e6640a7268bae434a4ccc93059f05f78",
+        "has_lang_file": true
+      },
+      "patches": {
+        "encrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-11-p1-5-encrypted.vcdiff",
+          "sha256": "0e7dcff064c6f674a5a172109d00baa3b7852dfb3750b6745aa17a0488b4e558",
+          "size": 23913763
+        },
+        "decrypted": {
+          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-11-p1-5-decrypted.vcdiff",
+          "sha256": "234a342cf9264b966cf3b21ee4bee9e1fb553bc5f7f3acedadef897d90e99585",
+          "size": 3383338
+        }
+      }
+    }
+  ]
+}
