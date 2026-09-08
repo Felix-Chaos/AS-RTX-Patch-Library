@@ -1,0 +1,9 @@
+# Patch payloads must never be line-ending translated or diffed as text.
+*.vcdiff binary
+
+# Keep the generated catalogue and configs stable across platforms.
+patch_index.json text eol=lf
+*.json text eol=lf
+*.mjs text eol=lf
+*.yml text eol=lf
+*.md text eol=lf
