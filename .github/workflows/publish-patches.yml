@@ -1,0 +1,93 @@
+name: Publish patches
+
+# Patches/ is the source of truth. Adding a folder publishes a patch; removing
+# one retires it. This workflow derives the release assets and patch_index.json
+# from whatever the folder set currently contains.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Patches/**"
+      - "scripts/generate-patch-index.mjs"
+      - ".github/workflows/publish-patches.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-patches
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: patch-library
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Ensure the patch-library release exists
+        run: |
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            gh release create "$TAG" \
+              --title "A&S RTX Patcher - Patch Library" \
+              --notes "Permanent asset store for the .vcdiff patch files referenced by patch_index.json. This is NOT an app release. Do not delete this release or its assets." \
+              --latest=false
+          fi
+
+      - name: List assets already on the release
+        run: gh release view "$TAG" --json assets --jq '.assets[].name' > /tmp/assets.txt || : > /tmp/assets.txt
+
+      - name: Regenerate catalogue and stage changed assets
+        run: node scripts/generate-patch-index.mjs --assets-file /tmp/assets.txt
+
+      # Assets go up BEFORE the manifest, so a patcher fetching mid-run never
+      # sees a catalogue pointing at an asset that has not landed yet.
+      - name: Upload new and changed patch files
+        run: |
+          shopt -s nullglob
+          files=(.release-staging/*.vcdiff)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No new or changed patch files."
+          else
+            printf 'Uploading %s file(s)\n' "${#files[@]}"
+            gh release upload "$TAG" "${files[@]}" --clobber
+          fi
+
+      - name: Delete assets no longer backed by a folder
+        run: |
+          node scripts/generate-patch-index.mjs --list-orphans --assets-file /tmp/assets.txt > /tmp/orphans.txt
+          if [ -s /tmp/orphans.txt ]; then
+            while read -r name; do
+              [ -n "$name" ] || continue
+              echo "Deleting orphaned asset: $name"
+              gh release delete-asset "$TAG" "$name" -y
+            done < /tmp/orphans.txt
+          else
+            echo "No orphaned assets."
+          fi
+
+      - name: Upload the catalogue
+        run: gh release upload "$TAG" patch_index.json --clobber
+
+      - name: Verify the published catalogue
+        run: node scripts/generate-patch-index.mjs --check
+
+      - name: Commit the regenerated catalogue
+        run: |
+          if git diff --quiet -- patch_index.json; then
+            echo "Catalogue unchanged."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add patch_index.json
+            git commit -m "chore: regenerate patch_index.json [skip ci]"
+            git push
+          fi
