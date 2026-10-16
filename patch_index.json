@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-13T19:42:53.487Z",
+  "updated": "2026-10-16T13:48:16.614Z",
   "entries": [
     {
       "slug": "as-1-10-1-p1-0",
@@ -287,38 +287,6 @@
           "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-11-p1-5-decrypted.vcdiff",
           "sha256": "234a342cf9264b966cf3b21ee4bee9e1fb553bc5f7f3acedadef897d90e99585",
           "size": 3383338
-        }
-      }
-    },
-    {
-      "slug": "as-1-12-p0-1",
-      "folder_name": "Actions & Stuff for RTX 1.12 V0.1",
-      "packVersion": "v1.12",
-      "patchVersion": "0.1",
-      "marketplace_pack_stats": {
-        "v1": {
-          "files": 13691,
-          "dirs": 171
-        }
-      },
-      "stats": {
-        "files": 13691,
-        "dirs": 171
-      },
-      "validation": {
-        "logo_hash": "fc16349c69905251070292252658fa98e6640a7268bae434a4ccc93059f05f78",
-        "has_lang_file": true
-      },
-      "patches": {
-        "encrypted": {
-          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-12-p0-1-encrypted.vcdiff",
-          "sha256": "9b2044b0eeff3c178ece1c1678ba4bc68a6cf77b6aff07224b1961f612b4af21",
-          "size": 64503631
-        },
-        "decrypted": {
-          "url": "https://github.com/Felix-Chaos/AS-RTX-Patch-Library/releases/download/patch-library/as-1-12-p0-1-decrypted.vcdiff",
-          "sha256": "a16e1583261664f1d5b97809508ac6065b8eb70aa55080bb39d510c99c0da225",
-          "size": 12797693
         }
       }
     }
