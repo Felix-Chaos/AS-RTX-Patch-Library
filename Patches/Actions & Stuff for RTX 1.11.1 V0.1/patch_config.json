@@ -1,6 +1,8 @@
 {
     "packVersion": "v1.11.1",
     "patchVersion": "0.1",
+    "hotpatch": true,
+    "basedOn": "v1.11",
     "marketplace_pack_stats": {
         "v1": {
             "files": 12137,

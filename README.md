@@ -45,6 +45,14 @@ release. Set `"beta": false` to release a `0.x` patch early, or `"beta": true` t
 one. To promote a beta, change the field and push: the catalogue updates without re-uploading the
 patch. The website and the Discord bot show and announce patches by this field.
 
+### Hotpatches
+
+A hotpatch is a patch for a new A&S version made from the RTX patch of an older one, so content new
+in that A&S version may not have RTX materials yet. Mark it in `patch_config.json` with
+`"hotpatch": true` and, optionally, `"basedOn": "v1.11.1"` (the A&S version the RTX work comes from).
+The patcher's Create Patch tool writes both when its Hotpatch toggle is on. The catalogue carries
+`hotpatch` and `basedOn` on every entry; the patcher, website and Discord bot label it as a hotpatch.
+
 On every push touching `Patches/`, [`publish-patches.yml`](.github/workflows/publish-patches.yml):
 
 1. computes SHA-256 and size for each `.vcdiff`,
