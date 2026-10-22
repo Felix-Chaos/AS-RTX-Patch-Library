@@ -147,6 +147,9 @@ async function buildEntries() {
       packVersion: cfg.packVersion,
       patchVersion: cfg.patchVersion,
       beta: isBeta(cfg),
+      // A hotpatch carries the RTX work of an older A&S version (basedOn) over to this one.
+      hotpatch: cfg.hotpatch === true,
+      basedOn: cfg.hotpatch === true && cfg.basedOn ? String(cfg.basedOn) : null,
       marketplace_pack_stats: cfg.marketplace_pack_stats ?? null,
       stats: flattenStats(cfg.marketplace_pack_stats),
       validation: cfg.validation ?? null,
