@@ -37,6 +37,14 @@ Patches/
     patch_config.json     pack + patch version, expected file counts, logo hash
 ```
 
+### Beta patches
+
+Each catalogue entry has a `beta` field. A patch is beta when its `patch_config.json` has
+`"beta": true`. Without that field, a `0.x` patch version counts as beta and `1.0` and up as a
+release. Set `"beta": false` to release a `0.x` patch early, or `"beta": true` to hold back a `1.x`
+one. To promote a beta, change the field and push: the catalogue updates without re-uploading the
+patch. The website and the Discord bot show and announce patches by this field.
+
 On every push touching `Patches/`, [`publish-patches.yml`](.github/workflows/publish-patches.yml):
 
 1. computes SHA-256 and size for each `.vcdiff`,

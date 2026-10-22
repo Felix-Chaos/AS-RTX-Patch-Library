@@ -68,6 +68,16 @@ function flattenStats(mp) {
   return mp;
 }
 
+/**
+ * A patch is beta when its patch_config.json says `"beta": true`. Without the
+ * flag, a 0.x patch version counts as beta and 1.0 and up as a release, so set
+ * `"beta": false` to release a 0.x patch or `"beta": true` to hold back a 1.x one.
+ */
+function isBeta(cfg) {
+  if (typeof cfg.beta === "boolean") return cfg.beta;
+  return /^v?0(\.|$)/i.test(String(cfg.patchVersion));
+}
+
 function sha256File(file) {
   return new Promise((resolve, reject) => {
     const h = createHash("sha256");
@@ -136,6 +146,7 @@ async function buildEntries() {
       folder_name: d.name,
       packVersion: cfg.packVersion,
       patchVersion: cfg.patchVersion,
+      beta: isBeta(cfg),
       marketplace_pack_stats: cfg.marketplace_pack_stats ?? null,
       stats: flattenStats(cfg.marketplace_pack_stats),
       validation: cfg.validation ?? null,
