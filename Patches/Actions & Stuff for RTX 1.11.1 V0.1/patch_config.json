@@ -1,6 +1,7 @@
 {
     "packVersion": "v1.11.1",
     "patchVersion": "0.1",
+    "beta": false,
     "hotpatch": true,
     "basedOn": "v1.11",
     "marketplace_pack_stats": {
