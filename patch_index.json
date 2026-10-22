@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-22T13:10:06.271Z",
+  "updated": "2026-10-22T13:17:29.833Z",
   "entries": [
     {
       "slug": "as-1-10-1-p1-0",
@@ -112,7 +112,7 @@
       "folder_name": "Actions & Stuff for RTX 1.11.1 V0.1",
       "packVersion": "v1.11.1",
       "patchVersion": "0.1",
-      "beta": true,
+      "beta": false,
       "hotpatch": true,
       "basedOn": "v1.11",
       "marketplace_pack_stats": {
